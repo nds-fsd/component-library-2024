@@ -5,6 +5,7 @@ import Text from './Text';
 export default {
   title: 'Example/Text',
   component: Text,
+  tags: ['autodocs'],
 };
 
 const Template = (args) => <Text {...args} />;

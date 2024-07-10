@@ -5,6 +5,7 @@ import Input from './Input';
 export default {
   title: 'Example/Input',
   component: Input,
+  tags: ['autodocs'],
 };
 
 const Template = (args) => <Input {...args} />;
