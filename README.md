@@ -78,40 +78,59 @@ Una biblioteca de componentes de React creada con Vite, configurada con Storyboo
 9. Configura el archivo `package.json` para la publicación:
     ```json
     {
-      "name": "mi-componente-library",
-      "version": "1.0.0",
-      "description": "Una biblioteca de componentes de React",
-      "main": "dist/index.js",
-      "scripts": {
-        "build": "rollup -c"
-      },
-      "keywords": [
-        "react",
-        "component",
-        "library"
-      ],
-      "author": "Tu Nombre <tu.email@example.com>",
-      "license": "MIT",
-      "devDependencies": {
-        "@babel/core": "^7.15.0",
-        "@babel/preset-env": "^7.15.0",
-        "@babel/preset-react": "^7.14.5",
-        "@rollup/plugin-babel": "^5.3.0",
-        "@rollup/plugin-commonjs": "^21.0.1",
-        "@rollup/plugin-node-resolve": "^13.0.4",
-        "rollup": "^2.56.3",
-        "rollup-plugin-peer-deps-external": "^2.2.4",
-        "rollup-plugin-postcss": "^4.0.0",
-        "rollup-plugin-terser": "^7.0.2"
-      },
-      "peerDependencies": {
-        "react": "^17.0.2",
-        "react-dom": "^17.0.2"
-      },
-      "files": [
-        "dist"
-      ]
-    }
+  "name": "nuclio-component-library-2024",
+  "version": "1.0.0",
+  "description": "Component library for nuclio ",
+  "author": "carlosarenasf",
+  "license": "MIT",
+  "repository": "nds-fsd/component-library-2024",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "build-library": "rollup -c"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-react": "^7.14.5",
+    "@rollup/plugin-babel": "^5.3.1",
+    "@rollup/plugin-commonjs": "^21.1.0",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@storybook/addon-essentials": "^7.6.17",
+    "@storybook/addon-interactions": "^7.6.17",
+    "@storybook/addon-links": "^7.6.17",
+    "@storybook/addon-onboarding": "^1.0.11",
+    "@storybook/blocks": "^7.6.17",
+    "@storybook/react": "^7.6.17",
+    "@storybook/react-vite": "^7.6.17",
+    "@storybook/test": "^7.6.17",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.2",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.7",
+    "eslint-plugin-storybook": "^0.8.0",
+    "prop-types": "^15.8.1",
+    "rollup": "^2.79.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "storybook": "^7.6.17",
+    "vite": "^5.3.1"
+  }
+}
+
     ```
 
 10. Compila la biblioteca:
